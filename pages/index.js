@@ -1,13 +1,10 @@
-import { Animated, Basic, bounce, Combined } from '../shared/styles'
+import { Animated, Basic, bounce, Combined } from "../shared/styles";
 
 const Home = () => (
-  <div>
-    <Basic>Cool Styles</Basic>
-    <Combined>
-      With <code>:hover</code>.
-    </Combined>
-    <Animated animation={bounce}>Let's bounce.</Animated>
+  <div className="flex gap-8 text-2xl">
+    <div className="w-[200px] h-[200px] bg-red-600">box1</div>
+    <div className="w-[200px] h-[200px] bg-red-700">box2</div>
   </div>
-)
+);
 
-export default Home
+export default Home;
